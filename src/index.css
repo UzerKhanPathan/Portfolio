@@ -17,7 +17,7 @@ body {
   background-color: #000000;
   /* pure black */
   background-image: url('/compImage.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -29,9 +29,10 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Desktop only: use fixed background */
+/* Desktop only: use fixed background and cover */
 @media (min-width: 768px) {
   body {
     background-attachment: fixed;
+    background-size: cover;
   }
 }
