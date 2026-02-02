@@ -17,8 +17,9 @@ body {
   background-color: #000000;
   /* pure black */
   background-image: url('/compImage.png');
-  background-size: contain;
-  background-position: center center;
+  background-size: cover;
+  background-position: center top;
+  /* Show top portion (skull) on mobile */
   background-repeat: no-repeat;
   background-attachment: scroll;
   /* Changed from fixed for better mobile performance */
@@ -29,10 +30,11 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Desktop only: use fixed background and cover */
+/* Desktop only: use fixed background and center positioning */
 @media (min-width: 768px) {
   body {
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
   }
 }
