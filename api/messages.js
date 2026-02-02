@@ -25,6 +25,9 @@ export default async function handler(req, res) {
     }
 
     try {
+        if (!clientPromise) {
+            return res.status(503).json({ error: 'Database not configured' });
+        }
         const client = await clientPromise;
         const db = client.db('portfolio');
         const collection = db.collection('messages');
