@@ -100,7 +100,10 @@ export default async function handler(req, res) {
 
         } catch (error) {
             console.error('Error saving message:', error);
-            return res.status(500).json({ error: 'Failed to save message: ' + error.message });
+            // Return detailed error for debugging
+            return res.status(500).json({
+                error: `Save failed: ${error.message} (Code: ${error.code})`
+            });
         }
     }
 
