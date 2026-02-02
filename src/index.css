@@ -12,9 +12,17 @@
   }
 }
 
-html, body {
-  background-color: #0f172a; /* slate-950 */
-  color: #f8fafc; /* slate-50 */
+html,
+body {
+  background-color: #000000;
+  /* pure black */
+  background-image: url('/1401469.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f8fafc;
+  /* slate-50 */
   font-family: 'Inter', system-ui, sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;

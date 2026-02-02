@@ -32,13 +32,13 @@ const Header = () => {
 
             {/* Main Header */}
             <header
-                className={`sticky top - 0 left - 0 w - full z - 40 transition - all duration - 300 ${isScrolled ? 'bg-slate-950/80 backdrop-blur-md shadow-lg py-3' : 'bg-transparent py-5'
+                className={`sticky top - 0 left - 0 w - full z - 40 transition - all duration - 300 ${isScrolled ? 'bg-black/40 backdrop-blur-xl border-b border-white/10 shadow-lg py-3' : 'bg-transparent py-5'
                     } `}
             >
                 <div className="container mx-auto px-6 flex justify-between items-center">
                     {/* Logo */}
                     <a href="#home" className="text-3xl font-bold tracking-tighter hover:text-primary transition-colors font-sans">
-                        Uzerkhan<span className="text-primary">.</span>
+                        Uzairkhan<span className="text-primary">.</span>
                     </a>
 
                     {/* Desktop Nav */}
@@ -71,7 +71,7 @@ const Header = () => {
 
                 {/* Mobile Menu Overlay */}
                 {isMenuOpen && (
-                    <div className="fixed inset-0 top-[60px] bg-slate-950/95 backdrop-blur-xl z-30 p-6 flex flex-col items-center gap-8 md:hidden">
+                    <div className="fixed inset-0 top-[60px] bg-black/60 backdrop-blur-2xl z-30 p-6 flex flex-col items-center gap-8 md:hidden border-t border-white/10">
                         {navLinks.map((link) => (
                             <a
                                 key={link.path}

@@ -53,12 +53,12 @@ const Projects = () => {
     ];
 
     return (
-        <div className="min-h-screen pt-24 pb-16 px-6 bg-[#0f172a]">
+        <div className="min-h-screen pt-24 pb-16 px-6">
             <div className="container mx-auto max-w-5xl">
                 <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">Featured Projects</h1>
 
                 {/* Kafka Flow Visualization Section (Atris) */}
-                <section className="mb-20 bg-slate-900 border border-slate-700 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+                <section className="mb-20 bg-black/30 backdrop-blur-xl border border-white/20 rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
                     <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
                         <Activity size={200} />
                     </div>
@@ -74,10 +74,10 @@ const Projects = () => {
                                 Visualizing the asynchronous data flow from user input to audio generation.
                             </p>
                             <div className="flex gap-4 pt-4">
-                                <span className="flex items-center gap-2 text-sm text-slate-300 bg-slate-800 px-3 py-1 rounded-md border border-slate-700">
+                                <span className="flex items-center gap-2 text-sm text-slate-300 bg-black/30 backdrop-blur-md px-3 py-1 rounded-md border border-white/20">
                                     <Server size={14} className="text-green-400" /> Apache Kafka
                                 </span>
-                                <span className="flex items-center gap-2 text-sm text-slate-300 bg-slate-800 px-3 py-1 rounded-md border border-slate-700">
+                                <span className="flex items-center gap-2 text-sm text-slate-300 bg-black/30 backdrop-blur-md px-3 py-1 rounded-md border border-white/20">
                                     <Database size={14} className="text-red-400" /> Redis
                                 </span>
                             </div>
@@ -85,7 +85,7 @@ const Projects = () => {
 
                         {/* SVG Animation Container */}
                         <div className="flex-1 w-full flex justify-center py-8">
-                            <div className="relative w-full max-w-[400px] h-[200px] bg-slate-950/50 rounded-xl border border-slate-800 p-4">
+                            <div className="relative w-full max-w-[400px] h-[200px] bg-black/20 backdrop-blur-lg rounded-xl border border-white/20 p-4 shadow-xl">
                                 <svg viewBox="0 0 400 200" className="w-full h-full">
                                     {/* Path */}
                                     <path
@@ -122,14 +122,14 @@ const Projects = () => {
                 {/* Other Projects Grid */}
                 <div className="grid md:grid-cols-2 gap-8">
                     {projects.map((project, idx) => (
-                        <div key={idx} className="group bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-primary/50 transition-all hover:-translate-y-1 hover:shadow-xl">
+                        <div key={idx} className="group bg-black/30 backdrop-blur-xl border border-white/20 p-8 rounded-2xl hover:border-primary/50 hover:bg-black/40 transition-all hover:-translate-y-1 hover:shadow-2xl shadow-xl">
                             <h3 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
                             <p className="text-sm text-primary mb-4 font-medium">{project.role}</p>
                             <p className="text-slate-400 mb-6 line-clamp-3">{project.desc}</p>
 
                             <div className="flex flex-wrap gap-2 mb-8">
                                 {project.tags.map(tag => (
-                                    <span key={tag} className="text-xs px-3 py-1 bg-slate-800 text-slate-300 rounded-full border border-slate-700">
+                                    <span key={tag} className="text-xs px-3 py-1 bg-black/30 backdrop-blur-md text-slate-300 rounded-full border border-white/20">
                                         {tag}
                                     </span>
                                 ))}

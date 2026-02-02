@@ -59,7 +59,7 @@ const Education = () => {
     ];
 
     return (
-        <div className="min-h-screen pt-24 pb-16 px-6 bg-[#0f172a] text-white">
+        <div className="min-h-screen pt-24 pb-16 px-6 text-white">
             <div className="container mx-auto max-w-4xl relative">
                 <h1 className="text-4xl md:text-5xl font-bold mb-16 text-center">Academic Journey</h1>
 
@@ -85,14 +85,14 @@ const Education = () => {
                                     }`}
                             >
                                 {/* Timeline Node (Center) */}
-                                <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full border-4 border-[#0f172a] transform md:-translate-x-1/2 z-10 shadow-[0_0_15px_rgba(59,130,246,0.5)] flex items-center justify-center">
+                                <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-primary rounded-full border-4 border-[#000000] transform md:-translate-x-1/2 z-10 shadow-[0_0_15px_rgba(59,130,246,0.5)] flex items-center justify-center">
                                     {/* Optional icon inside node? Using separate icon for now */}
                                 </div>
 
                                 {/* Content Card */}
                                 <div className="w-full md:w-1/2 pl-12 md:pl-0 md:px-8">
-                                    <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl relative hover:border-primary/30 transition-colors shadow-lg group">
-                                        <div className="absolute -left-12 top-6 md:static md:mb-4 flex items-center justify-center w-12 h-12 bg-slate-800 rounded-full border border-slate-700 md:group-hover:scale-110 transition-transform">
+                                    <div className="bg-black/30 backdrop-blur-xl border border-white/20 p-6 rounded-2xl relative hover:border-primary/30 hover:bg-black/40 transition-all shadow-xl group">
+                                        <div className="absolute -left-12 top-6 md:static md:mb-4 flex items-center justify-center w-12 h-12 bg-black/30 backdrop-blur-md rounded-full border border-white/20 md:group-hover:scale-110 transition-transform shadow-lg">
                                             {item.icon}
                                         </div>
 

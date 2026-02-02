@@ -51,13 +51,13 @@ const HeroVisualizer = () => {
                 },
                 particles: {
                     color: {
-                        value: "#3b82f6",
+                        value: "#ffffff",
                     },
                     links: {
-                        color: "#64748b",
+                        color: "#ffffff",
                         distance: 150,
                         enable: true,
-                        opacity: 0.3,
+                        opacity: 0.5,
                         width: 1,
                     },
                     move: {
@@ -78,7 +78,7 @@ const HeroVisualizer = () => {
                         value: 150,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.8,
                     },
                     shape: {
                         type: "circle",

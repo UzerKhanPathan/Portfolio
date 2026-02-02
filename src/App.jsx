@@ -8,7 +8,7 @@ import AnonymousChat from './components/AnonymousChat';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-[#0f172a] text-slate-200">
+    <div className="min-h-screen flex flex-col font-sans text-slate-200">
       <Header />
       <main className="flex-grow">
         <section id="home">

@@ -85,7 +85,7 @@ const Home = () => {
     };
 
     return (
-        <div className="bg-[#0f172a] text-white">
+        <div className="text-white">
             {/* Hero Section */}
             <section ref={heroRef} className="min-h-screen flex flex-col justify-center items-center relative px-6 md:px-20 overflow-hidden text-center md:text-left">
 
@@ -95,13 +95,13 @@ const Home = () => {
                 </div>
 
                 {/* Decorative Background Overlay (to dim particles slightly if needed) */}
-                <div className="absolute inset-0 bg-[#0f172a]/20 pointer-events-none z-0"></div>
+                <div className="absolute inset-0 bg-[#000000]/20 pointer-events-none z-0"></div>
 
                 <div ref={nameRef} className="z-10 space-y-6 md:w-2/3 mx-auto relative pointer-events-none">
                     <div className="pointer-events-auto">
 
                         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-4 text-center">
-                            Uzerkhan <br /> Pathan
+                            Uzairkhan <br /> Pathan
                         </h1>
                         <p className="text-xl md:text-2xl text-slate-400 max-w-2xl mx-auto text-center min-h-[2rem]">
                             {typewriterText}
@@ -113,7 +113,7 @@ const Home = () => {
                             </a>
                             <button
                                 onClick={() => setIsContactOpen(true)}
-                                className="px-8 py-4 border border-white/20 rounded-lg font-bold hover:bg-white/5 transition-colors bg-slate-900/50 backdrop-blur-sm"
+                                className="px-8 py-4 border border-white/30 rounded-lg font-bold hover:bg-black/40 transition-all bg-black/20 backdrop-blur-md shadow-lg"
                             >
                                 Contact Me
                             </button>
@@ -123,14 +123,14 @@ const Home = () => {
             </section>
 
             {/* Skills Section */}
-            <section id="skills" ref={skillsRef} className="py-24 bg-slate-900/50">
+            <section id="skills" ref={skillsRef} className="py-24">
                 <div className="container mx-auto px-6">
                     <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">Technical Expertise</h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
                         {skills.map((skill, index) => (
                             <div
                                 key={index}
-                                className="skill-card opacity-0 bg-slate-800 border border-slate-700 p-8 rounded-2xl flex flex-col items-center gap-4 hover:border-primary/50 transition-colors shadow-lg hover:shadow-primary/10"
+                                className="skill-card opacity-0 bg-black/30 backdrop-blur-xl border border-white/20 p-8 rounded-2xl flex flex-col items-center gap-4 hover:border-primary/50 hover:bg-black/40 transition-all shadow-xl hover:shadow-2xl"
                             >
                                 {skill.icon}
                                 <span className="text-lg font-medium">{skill.name}</span>
@@ -144,7 +144,7 @@ const Home = () => {
             {isContactOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onClick={() => setIsContactOpen(false)}>
                     <div
-                        className="bg-slate-900 border border-white/10 p-8 rounded-2xl max-w-md w-full relative shadow-2xl"
+                        className="bg-black/40 backdrop-blur-2xl border border-white/20 p-8 rounded-2xl max-w-md w-full relative shadow-2xl"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <button
@@ -157,7 +157,7 @@ const Home = () => {
                         <h3 className="text-2xl font-bold text-white mb-6 text-center">Get in Touch</h3>
 
                         <div className="space-y-6">
-                            <div className="flex items-center gap-4 p-4 bg-slate-800/50 rounded-xl hover:bg-slate-800 transition-colors">
+                            <div className="flex items-center gap-4 p-4 bg-black/20 backdrop-blur-md rounded-xl hover:bg-black/30 transition-all border border-white/10">
                                 <div className="p-3 bg-primary/10 rounded-full text-primary">
                                     <Phone className="w-6 h-6" />
                                 </div>

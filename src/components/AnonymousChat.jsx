@@ -45,7 +45,7 @@ const AnonymousChat = () => {
     };
 
     return (
-        <section id="anonymous-chat" className="py-24 bg-slate-900/30">
+        <section id="anonymous-chat" className="py-24">
             <div className="container mx-auto px-6 max-w-3xl">
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
@@ -57,7 +57,7 @@ const AnonymousChat = () => {
                     </p>
                 </div>
 
-                <div className="bg-slate-800/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 shadow-2xl">
+                <div className="bg-black/30 backdrop-blur-2xl border border-white/20 rounded-2xl p-8 shadow-2xl">
                     {submitted ? (
                         <div className="text-center py-12">
                             <div className="inline-flex items-center justify-center w-20 h-20 bg-green-500/10 rounded-full mb-6">
@@ -80,7 +80,7 @@ const AnonymousChat = () => {
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
                                     placeholder="Type your message here... (completely anonymous)"
-                                    className="w-full px-4 py-3 bg-slate-900/50 border border-white/10 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all resize-none"
+                                    className="w-full px-4 py-3 bg-black/20 backdrop-blur-md border border-white/20 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all resize-none"
                                     required
                                 />
                                 <p className="text-xs text-slate-500 mt-2">
