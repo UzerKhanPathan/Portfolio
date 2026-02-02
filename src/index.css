@@ -18,12 +18,20 @@ body {
   /* pure black */
   background-image: url('/1401469.png');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  /* Changed from fixed for better mobile performance */
   color: #f8fafc;
   /* slate-50 */
   font-family: 'Inter', system-ui, sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+/* Desktop only: use fixed background */
+@media (min-width: 768px) {
+  body {
+    background-attachment: fixed;
+  }
 }
