@@ -1,4 +1,4 @@
-import clientPromise from './db';
+import clientPromise from './db.js';
 import { ObjectId } from 'mongodb';
 
 // Simple hash function for IP
