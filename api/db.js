@@ -5,7 +5,9 @@ let client;
 let clientPromise;
 
 if (!process.env.MONGODB_URI) {
-    throw new Error('Please add your Mongo URI to .env.local');
+    console.error('MONGODB_URI is missing from environment variables');
+    // We don't throw here to avoid crashing the whole function on import.
+    // The connection will fail later which we can catch found.
 }
 
 const options = {

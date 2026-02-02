@@ -21,6 +21,10 @@ export default async function handler(req, res) {
     };
 
     try {
+        if (!process.env.MONGODB_URI) {
+            throw new Error('MONGODB_URI environment variable is missing');
+        }
+
         const start = Date.now();
         const client = await clientPromise;
         await client.db('portfolio').command({ ping: 1 });
