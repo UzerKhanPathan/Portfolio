@@ -20,8 +20,7 @@ function App() {
         <section id="education">
           <Education />
         </section>
-        {/* <AnonymousChat /> */}
-        {/* Anonymous Chat temporarily disabled - backend needs to be deployed */}
+        <AnonymousChat />
       </main>
       <Footer />
     </div>
