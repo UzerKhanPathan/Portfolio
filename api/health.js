@@ -12,6 +12,8 @@ export default async function handler(req, res) {
         timestamp: new Date().toISOString(),
         env: {
             hasMongoUri: !!process.env.MONGODB_URI,
+            // List all keys to check for typos (e.g. MONGODB_URI_ )
+            allKeys: Object.keys(process.env).sort(),
             nodeEnv: process.env.NODE_ENV
         },
         database: {
